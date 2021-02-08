@@ -1,4 +1,4 @@
 def build(String tag) {
-	docker.build($tag)
+	docker.build("$tag")
 }
 
