@@ -1,4 +1,5 @@
 def push(String awsRepoURL, String awsCredentials, String tag, String image){
-        docker.withRegistry('$URL', '$credentials')
-        $image.push('$tag')
+        docker.withRegistry('$URL', '$credentials'){
+                $image.push('$tag')
+        }
 }
