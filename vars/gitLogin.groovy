@@ -1,3 +1,3 @@
-def login(String repo,String branch, String credentials) {
-	git url: "https://github.com/rishithareddypasnoor007/$repo", branch: "$branch", credentialsID: "$credentials"
+def login(String branch, String credentials) {
+	git url: "https://github.com/Cowbell-Cyber/dairy.git", branch: "$branch", credentialsID: "$credentials"
 }
