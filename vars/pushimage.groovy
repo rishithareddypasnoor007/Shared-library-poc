@@ -1,4 +1,4 @@
-def push(String awsRepoURL, String awsCredentials, String tag, Image image){
+def push(String awsRepoURL, String awsCredentials, String tag){
        docker.withRegistry('$awsRepoURL', '$awsCredentials'){
                image.push('$tag')
        }
